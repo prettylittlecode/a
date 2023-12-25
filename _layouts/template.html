@@ -53,7 +53,9 @@
                         <ul style="">
                             <li class="bold">
                                 <i aria-hidden="true" class=""></i>
-                                <a href="https://prettylittlecode.github.io/x/pages/home/home-index.html">Home</a>
+{% for page in site.pages %}
+    <a href={{ page.explore.md }}>{{ page.Explore }}</a>
+{% endfor %}
                             </li>
 
                             <li>
